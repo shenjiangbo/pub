@@ -12,13 +12,13 @@
 	{% if site.BaiduSiteVerification %}
 	<meta name="baidu-site-verification" content="{{ site.BaiduSiteVerification }}" />
     {% endif %}
-    <link rel="apple-touch-icon" href="{{ '/assets/logo.png' | prepend: site.baseurl }}">
-    <link rel="icon" href="{{ '/assets/favicon-32.ico' | prepend: site.baseurl }}"> 
-    <link rel="bookmark" href="{{ '/assets/favicon-128.ico' | prepend: site.baseurl }}" type="image/x-icon"　/>
+    <link rel="apple-touch-icon" href="{{ '/pub/assets/logo.png' | prepend: site.baseurl }}">
+    <link rel="icon" href="{{ '/pub/assets/favicon-32.ico' | prepend: site.baseurl }}"> 
+    <link rel="bookmark" href="{{ '/pub/assets/favicon-128.ico' | prepend: site.baseurl }}" type="image/x-icon"　/>
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ '/feed.xml' | prepend: site.baseurl }}">
-    <script src="{{ '/assets/js/jquery-3.2.1.min.js' | prepend: site.baseurl }}"></script>
-    <script src="{{ '/assets/js/bootstrap.min.js' | prepend: site.baseurl }}"></script>
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ '/pub/feed.xml' | prepend: site.baseurl }}">
+    <script src="{{ '/pub/assets/js/jquery-3.2.1.min.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/pub/assets/js/bootstrap.min.js' | prepend: site.baseurl }}"></script>
     <script type="text/javascript">
        var $versioncode = {{ site.versioncode }};//当前版本号，请勿修改
 	   var $lang = "{{ page.lang }}";
@@ -30,27 +30,27 @@
     <!-- 配置信息 -->
     <script type="text/javascript" src="http://joytou.nets.hk/server/server.js"></script>
     <!-- 引入服务端脚本命令 -->
-    <script src="{{ '/assets/js/bootstrap3-typeahead.min.js' | prepend: site.baseurl }}"></script>
-    <script src="{{ '/assets/js/cb-search.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/pub/assets/js/bootstrap3-typeahead.min.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/pub/assets/js/cb-search.js' | prepend: site.baseurl }}"></script>
 	  
     <title>{% if page.title%}{{ page.title }} - {{ translation.sitename }}{% else %}{{ translation.sitename }} - {{ translation.sitesubname }}{% endif %}</title>
 
     <!-- pictonic font icon css-->
-    <link rel="stylesheet" href="{{ '/assets/css/pictonic.css' | prepend: site.baseurl }}">
-    <!--[if lt IE 8]><script src="{{ '/assets/js/pictonic.min.js' | prepend: site.baseurl }}"></script><![endif]-->
+    <link rel="stylesheet" href="{{ '/pub/assets/css/pictonic.css' | prepend: site.baseurl }}">
+    <!--[if lt IE 8]><script src="{{ '/pub/assets/js/pictonic.min.js' | prepend: site.baseurl }}"></script><![endif]-->
 	
     <!-- Bootstrap core CSS -->
-    <link href="{{ '/assets/css/bootstrap.min.css' | prepend: site.baseurl }}" rel="stylesheet">
+    <link href="{{ '/pub/assets/css/bootstrap.min.css' | prepend: site.baseurl }}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="{{ '/assets/css/styles.css' | prepend: site.baseurl }}" rel="stylesheet">
+    <link href="{{ '/pub/assets/css/styles.css' | prepend: site.baseurl }}" rel="stylesheet">
 
 	<!-- search style -->
-    <link href="{{ '/assets/css/cb-search.css' | prepend: site.baseurl }}" rel="stylesheet">
+    <link href="{{ '/pub/assets/css/cb-search.css' | prepend: site.baseurl }}" rel="stylesheet">
 	
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="{{ '/assets/js/ie-emulation-modes-warning.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/pub/assets/js/ie-emulation-modes-warning.js' | prepend: site.baseurl }}"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
